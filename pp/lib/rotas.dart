@@ -7,7 +7,9 @@ import 'package:pp/paginas/list_prod_equipamento.dart';
 import 'package:pp/paginas/relatorio.dart';
 
 final rotas = {
-  '/' : (BuildContext context) => MyApp(),
-  '/primeira': (BuildContext context), CadProdCodigoScreen(),
-}
+  //'/' : (BuildContext context) => MyApp(),
+  '/cad-prod-codigo': (BuildContext context) => CadProdCodigoScreen(),
+  '/cad-prod-equipamento': (BuildContext context) => CadProdEquipamentoScreen(),
+  '/list-prod-equipamento': (BuildContext context) => ListProdEquipamentoScreen()
+};
 

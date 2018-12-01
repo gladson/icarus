@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 
-class CadProdCodigoScreen extends StatefulWidget {
+class ListProdEquipamentoScreen extends StatefulWidget {
   @override
-  _CadProdCodigoScreenState createState() => new _CadProdCodigoScreenState();
+  _ListProdEquipamentoScreenState createState() => new _ListProdEquipamentoScreenState();
 }
 
-class _CadProdCodigoScreenState extends State<CadProdCodigoScreen> {
+class _ListProdEquipamentoScreenState extends State<ListProdEquipamentoScreen> {
 
   @override
   Widget build(BuildContext context) {

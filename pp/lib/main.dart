@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:pp/paginas/cad_prod_codigo.dart';
+import 'package:pp/rotas.dart';
 
 import 'dart:async';
 
@@ -20,9 +20,7 @@ class MyApp extends StatelessWidget {
       home: new MyHomePage(
           title: 'IStock'
       ),
-      routes: <String, WidgetBuilder>{
-        '/CadProdCodigoScreen': (BuildContext context) => new CadProdCodigoScreen()
-      },
+      routes: rotas,
     );
   }
 }
@@ -44,7 +42,7 @@ class _MyHomePageState extends State<MyHomePage> {
   }
 
   void navigationPage() {
-    Navigator.of(context).pushReplacementNamed('/CadProdCodigoScreen');
+    Navigator.of(context).pushReplacementNamed('/cad-prod-codigo');
   }
 
   @override

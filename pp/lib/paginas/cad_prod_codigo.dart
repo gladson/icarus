@@ -70,7 +70,7 @@ class _CadProdCodigoScreenState extends State<CadProdCodigoScreen> {
             alignment: MainAxisAlignment.spaceAround,
             children: <Widget>[
               new RaisedButton(
-                onPressed: _validateInputs,
+                onPressed: _goCadProdEquipamento,
                 child: new Icon(Icons.add),
                 color: Colors.black87,
                 shape: StadiumBorder(
@@ -110,6 +110,10 @@ class _CadProdCodigoScreenState extends State<CadProdCodigoScreen> {
       Scaffold.of(context)
           .showSnackBar(SnackBar(content: Text('Enviando Dados!')));
     }
+  }
+
+  void _goCadProdEquipamento(){
+    Navigator.pushNamed(context, '/cad-prod-equipamento');
   }
 
 }
